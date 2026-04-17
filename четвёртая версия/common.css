@@ -1,0 +1,36 @@
+/* БЛОК common — глобальная система BEM */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* БЛОК page */
+.page {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    transition: background 0.3s ease;
+}
+
+/* МОДИФИКАТОР page_theme_dark */
+.page_theme_dark {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* УТИЛИТА container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+}

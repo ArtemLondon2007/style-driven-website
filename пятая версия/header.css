@@ -1,0 +1,22 @@
+/* header.css — Блок-отступ (Minimalist BEM) */
+
+.header {
+    /* Только высота для создания "воздуха" сверху */
+    height: 60px; 
+    background-color: transparent;
+    
+    /* Плавный переход, если решишь добавить фоновый цвет позже */
+    transition: var(--transition-base, all 0.3s ease);
+}
+
+/* Модификатор состояния через блок page */
+.page_theme_dark .header {
+    background-color: transparent;
+}
+
+/* Адаптивность: уменьшаем отступ на мобильных устройствах */
+@media (max-width: 768px) {
+    .header {
+        height: 40px;
+    }
+}

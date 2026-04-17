@@ -1,0 +1,36 @@
+/* БЛОК card */
+.card {
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* МОДИФИКАТОР card_hover (CSS) */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* МОДИФИКАТОР card_hovered (JS) */
+.card_hovered {
+    transform: scale(1.05);
+}
+
+/* ЭЛЕМЕНТЫ */
+.card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-size: 16px;
+    opacity: 0.9;
+}

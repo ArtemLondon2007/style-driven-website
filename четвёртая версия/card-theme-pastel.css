@@ -1,0 +1,6 @@
+/* МОДИФИКАТОР card_theme_pastel */
+.card_theme_pastel {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+    border-radius: 20px;
+}

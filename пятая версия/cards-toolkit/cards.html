@@ -1,0 +1,15 @@
+<!-- cards-toolkit/cards.html -->
+
+<!-- 1. ШАБЛОН ЭЛЕМЕНТА КАРТОЧКИ (БЭМ: Блок card) -->
+<!-- Этот шаблон используется JS-скриптом для отрисовки данных из массива -->
+<template id="card-template">
+    <article class="card">
+        <h3 class="card__title">Заголовок</h3>
+        <p class="card__text">Текст описания</p>
+        <button class="card__delete" title="Удалить">🗑️</button>
+    </article>
+</template>
+
+<!-- 2. ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ -->
+<!-- Мы оставляем его как единственный элемент управления на странице -->
+<button class="theme-toggle" id="themeToggle" title="Переключить тему">🌓</button>

@@ -1,0 +1,49 @@
+/* footer.css — Блок Footer по БЭМ */
+
+.footer {
+    /* Используем переменную фона, которая меняется в зависимости от темы страницы */
+    background-color: var(--footer-bg, #f1f1f1);
+    color: var(--text-main, #333333);
+    
+    padding: var(--space-l) var(--gutter);
+    text-align: center;
+    margin-top: auto; /* Прижимает футер к низу страницы */
+    
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-base);
+}
+
+/* ЭЛЕМЕНТ: Текст в футере */
+.footer__text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.6; /* Делаем текст менее акцентным для минимализма */
+    line-height: 1.5;
+}
+
+/* ЭЛЕМЕНТ: Ссылка в футере */
+.footer__link {
+    color: var(--color-primary, #667eea);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.footer__link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* МОДИФИКАТОР: Темная тема для футера (через контекст блока page) */
+.page_theme_dark .footer {
+    --footer-bg: #1a1a1a;
+    color: var(--text-light, #f4f4f4);
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--space-m) var(--gutter);
+    }
+}
